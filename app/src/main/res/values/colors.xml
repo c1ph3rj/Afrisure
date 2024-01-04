@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="themeColor">#FA4D2E</color>
+    <color name="lightOrange">#FFECE9</color>
+    <color name="greyLight">#F0F0F0</color>
+    <color name="lightGrey">#F8F7F7</color>
+    <color name="greyLighter">#D3D3D3</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="greyDark">#757575</color>
+    <color name="greyDarker">#262626</color>
+    <color name="lightestOrange">#FBEDE0</color>
+    <color name="red">#D80032</color>
+    <color name="blueHyperLink">#0000FF</color>
+    <color name="app_background">#f5f5f5</color>
+    <color name="maroon">#BB1E35</color>
+    <color name="blur">#ABCDDEEF</color>
+    <color name="yellow">#E6E603</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

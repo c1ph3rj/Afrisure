@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeColorStatusBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".dashboard.Dashboard"
+            android:theme="@style/ThemeColorStatusBar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.phone_number.LoginPhoneNumber"
+            android:exported="false"
+            android:theme="@style/DarkThemeStatusBar" />
+        <activity
+            android:name=".login.email.LoginEmail"
+            android:exported="false"
+            android:theme="@style/DarkThemeStatusBar" />
+        <activity
+            android:name=".login.VerifyOTP"
+            android:exported="false"
+            android:theme="@style/DarkThemeStatusBar" />
+        <activity
+            android:name=".landing.LandingPage"
+            android:exported="false"
+            android:theme="@style/DarkThemeStatusBar" />
+
+        <activity
+            android:name=".custom_forms.CustomForms"
+            android:exported="false" />
+        <activity
+            android:name=".GetPremium.GetPremium"
+            android:exported="false" />
+        <activity
+            android:name=".user_information.UserInformationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".products.ProductsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".line_of_business.LineOfBusinessScreen"
+            android:exported="false" />
+    </application>
+
+</manifest>

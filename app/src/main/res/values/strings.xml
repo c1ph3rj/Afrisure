@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Afrisure</string>
+
+    <string name="selected_page">%s page is selected!</string>
+    <string name="base_url">https://primez-uat-api.azurewebsites.net/</string>
+
+    <string-array name="entities">
+        <item>Hello World</item>
+        <item>Hello There</item>
+    </string-array>
+
+    <string name="session_expired">Your session has been expired. Please login again to continue</string>
+    <string name="app_version" translatable="false">1.0.1</string>
+    <string name="reset_timer">00:00:00</string>
+
+    <string-array name="languageList">
+        <item>Tamil</item>
+        <item>Hindi</item>
+        <item>French</item>
+    </string-array>
+
+
+    <string name="gps_not_enabled">GPS locations is not enabled.Please enable it</string>
+    <string name="nonetwork">Please check your network connection</string>
+    <string name="cmn_something_wrong_msg">An unexpected error occurred.</string>
+    <string name="trms"><![CDATA[Terms & Conditions]]></string>
+    <string name="read_terms"><![CDATA[I have read the Terms & Conditions]]></string>
+    <string name="accpt">Accept</string>
+    <string name="enter_mobile">Enter your mobile number</string>
+    <string name="hello">Hello!</string>
+    <string name="signin_act">Sign in</string>
+    <string name="code">+91</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="code_snt">We have sent a six digit code on</string>
+    <string name="dummyNum">+916369208301</string>
+    <string name="otp_enter_txt">OTP Verification</string>
+    <string name="wrngNum">Not your phone number? </string>
+    <string name="clh"><u>Click Here</u></string>
+    <string name="otp_wait">You can resend OTP request again in</string>
+    <string name="_00_59">00:59</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="otp_not_received">Didn\'t get OTP code?</string>
+    <string name="verify">Verify</string>
+    <string name="timer">00:</string>
+    <string name="timer2">00:0</string>
+    <string name="todo">TODO</string>
+    <string name="no_act">Don\'t have an account? </string>
+    <string name="create">Sign up</string>
+    <string name="mail">Email</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="pass_frgt">Forgot your password?</string>
+    <string name="email_regex">[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}</string>
+    <string name="name">Name</string>
+    <string name="cnf_pass">Confirm Password</string>
+    <string name="crt_act">Create Account</string>
+    <string name="mobile">Mobile</string>
+    <string name="name_regex">^[a-zA-Z ]+$</string>
+    <string name="pwd_err_msg">Please enter the password</string>
+    <string name="mail_err_msg">Please enter the valid email address</string>
+    <string name="sign_latin">Experience the future of policy issuance – quick, intuitive, and tailored to you!</string>
+    <string name="chng"><u>change?</u></string>
+    <string name="nxt"><![CDATA[Next >>]]></string>
+    <string name="prev"><![CDATA[<< Previous]]></string>
+</resources>

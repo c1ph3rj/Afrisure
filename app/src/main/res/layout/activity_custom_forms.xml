@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".custom_forms.CustomForms">
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:text="Line of Business"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/line_of_business_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:maxLines="1"
+                android:text="Life Insurance"
+                android:textAlignment="center"
+                android:textColor="@color/blueHyperLink"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/dotted_vertical_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/latinotypeantartidaroundedbold"
+                android:text="Products"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/productsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/text_view_background"
+                android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center|center_vertical"
+                android:maxLines="1"
+                android:text="Life-Children"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/productTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/latinotypeantartidaroundedmedium"
+                android:gravity="center|center_vertical"
+                android:maxLines="1"
+                android:text="Life-Children"
+                android:textColor="@color/blueHyperLink"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/dynamicFormView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/nextBtn"
+        android:background="@color/themeColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</LinearLayout>

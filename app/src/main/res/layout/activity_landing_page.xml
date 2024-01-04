@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".landing.LandingPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="end"
+        >
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imageViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/skipButtonLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip >"
+            android:textColor="@color/blueHyperLink"
+            android:layout_margin="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blur"
+        android:layout_marginHorizontal="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/lpTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Secure Your Drive"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/lpSubTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Experience Peace of Mind on Every Journey"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="5"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:id="@+id/lpPrevious"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="@string/prev"
+                android:layout_weight="1"
+                android:letterSpacing="0.05"
+                android:textColor="@color/lightGrey"
+                android:gravity="center"
+                android:textSize="16dp"
+                />
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDottedLine"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabIndicatorHeight="0dp"
+                app:tabGravity="center"
+                android:layout_weight="3"
+                app:tabMaxWidth="20dp"
+                app:tabIndicatorAnimationMode="linear"
+                app:tabSelectedTextColor="@color/themeColor"
+                />
+
+            <TextView
+                android:id="@+id/lpNext"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="@string/nxt"
+                android:letterSpacing="0.05"
+                android:textColor="@color/themeColor"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

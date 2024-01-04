@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Afrisure" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/themeColor</item>
+        <item name="colorPrimaryVariant">@color/themeColor</item>
+        <item name="fontFamily">@font/latinotypeantartidaroundedmedium</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/themeColor</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AppTheme.Alert.Button.Positive</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/AppTheme.Alert.Button.Negative</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/themeColor</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/themeColor</item>
+    </style>
+
+    <style name="DarkThemeStatusBar" parent="Base.Theme.Afrisure">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+    <style name="ThemeColorStatusBar" parent="Base.Theme.Afrisure">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/themeColor</item>
+    </style>
+
+</resources>
